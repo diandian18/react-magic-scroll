@@ -1,6 +1,7 @@
 {
   "name": "@zhangsai/react-magic-scroll",
   "version": "0.0.2",
+  "keywords": ["react", "react scroll", "magic scroll", "scroll trigger", "scroll animation", "scroll", "scroll magic", "apple scroll"],
   "files": [
     "dist"
   ],
