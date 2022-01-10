@@ -1,0 +1,50 @@
+{
+  "name": "@zhangsai/react-magic-scroll",
+  "version": "0.0.1",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/react-magic-scroll.umd.js",
+  "module": "./dist/react-magic-scroll.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/react-magic-scroll.es.js",
+      "require": "./dist/react-magic-scroll.umd.js"
+    }
+  },
+  "scripts": {
+    "dev": "vite --mode localhost",
+    "build": "vite build",
+    "lint:js": "eslint --cache --ext .js,.jsx,.ts,.tsx ./src",
+    "lint:fix": "eslint --fix --cache --ext .js,.jsx,.ts,.tsx ./src",
+    "preview": "vite preview",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx}": "eslint --cache --ext .js,.jsx,.ts,.tsx --max-warnings 0"
+  },
+  "dependencies": {
+    "ahooks": "^3.0.1",
+    "classnames": "^2.3.1",
+    "d3-ease": "^3.0.1",
+    "d3-scale": "^4.0.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@types/d3-ease": "^3.0.0",
+    "@types/d3-scale": "^4.0.2",
+    "@types/node": "^17.0.8",
+    "@types/react": "^17.0.33",
+    "@types/react-dom": "^17.0.10",
+    "@umijs/fabric": "2.8.1",
+    "@vitejs/plugin-react": "^1.0.7",
+    "eslint": "^7.32.0",
+    "husky": "^7.0.4",
+    "less": "^4.1.2",
+    "lint-staged": "^12.1.2",
+    "typescript": "^4.5.4",
+    "vite": "^2.7.2"
+  },
+  "license": "MIT"
+}

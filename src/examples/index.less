@@ -1,0 +1,41 @@
+html, body, #root, div, h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+}
+
+body, html, #root {
+  height: 100%;
+}
+
+.container {
+  height: 100%;
+  overflow-y: auto;
+}
+
+.box {
+  height: 500px;
+  border: 1px solid #000;
+  &:nth-child(1) {
+    background-color: rgb(230, 91, 91);
+  }
+  &:nth-child(2) {
+    background-color: rgb(174, 230, 110);
+  }
+  &:nth-child(3) {
+    background-color: rgb(110, 222, 230);
+  }
+  &:nth-child(4) {
+    background-color: rgb(182, 110, 230);
+  }
+  &:nth-child(5) {
+    background-color: rgb(230, 174, 110);
+  }
+}
+
+h1 {
+  font-size: 48px;
+}
+p {
+  font-size: 32px;
+  margin-bottom: 200px;
+}
