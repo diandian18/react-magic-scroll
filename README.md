@@ -1,16 +1,20 @@
+![npm bundle size](https://img.shields.io/badge/gzip%20size-2.5KB-brightgreen) ![typescript d.ts](https://img.shields.io/badge/typescript-d.ts-brightgreen)
+
 # react-magic-scroll
 
-A react library for adding some effect you want when scroll.
+🖱️ A react library for adding some effects you want when scroll.
+
+![typescript d.ts](./src/examples/img/example.gif)
 
 ## Installation
 
 ```shell
-npm i @zhangsai/react-magic-scroll
+npm i -S @zhangsai/react-magic-scroll
 ```
 
 ## Usage
 
-### step1: Write a normal scroll layout
+### Step1: Write a normal scroll layout
 
 ```html
 <div className="container" ref={containerRef}>
@@ -38,7 +42,7 @@ body, html, #root {
 }
 ```
 
-### step2. Set Container
+### Step2. Set Container
 
 ```js
 import { withMagicScroll, useMagicScrollConsumer, MagicScrollProvider } from '@zhangsai/react-magic-scroll';
@@ -55,7 +59,7 @@ function YourComponent() {
 export default withMagicScroll(App); // or use MagicScrollProvider
 ```
 
-### step3. Set scrolling target
+### Step3. Set scrolling target
 
 ```js
 import { easeCubicOut } from 'd3-ease';
@@ -69,6 +73,7 @@ function YourComponent() {
         duration={500}
         offset={0}
         onProcess={(process, ref) => {
+          // Do any effects you want.
           const bezieredProcess = easeCubicOut(process);
           ref.style.transform = `matrix(1, 0, 0, 1, 0, ${150 * (1 - bezieredProcess)})`;
           ref.style.opacity = String(bezieredProcess);
@@ -91,7 +96,7 @@ When the target by MagicScroll appear at the bottom of browser (what `offset={0}
 ### Or use useMagicScroll instead
 
 ```js
-import { useMagicScroll } from '@zhangsai/react-magic-scroll';
+import { useMagicScroll, TargetOption } from '@zhangsai/react-magic-scroll';
 
 function YourComponent() {
   const { containerRef } = useMagicScrollConsumer();

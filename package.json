@@ -1,6 +1,6 @@
 {
   "name": "@zhangsai/react-magic-scroll",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "keywords": ["react", "react scroll", "magic scroll", "scroll trigger", "scroll animation", "scroll", "scroll magic", "apple scroll"],
   "files": [
     "dist"
@@ -14,7 +14,7 @@
     }
   },
   "scripts": {
-    "dev": "vite --mode localhost",
+    "start": "vite --mode localhost",
     "build": "vite build",
     "lint:js": "eslint --cache --ext .js,.jsx,.ts,.tsx ./src",
     "lint:fix": "eslint --fix --cache --ext .js,.jsx,.ts,.tsx ./src",
@@ -26,11 +26,7 @@
   },
   "dependencies": {
     "ahooks": "^3.0.1",
-    "classnames": "^2.3.1",
-    "d3-ease": "^3.0.1",
-    "d3-scale": "^4.0.2",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "classnames": "^2.3.1"
   },
   "devDependencies": {
     "@types/d3-ease": "^3.0.0",
@@ -40,12 +36,19 @@
     "@types/react-dom": "^17.0.10",
     "@umijs/fabric": "2.8.1",
     "@vitejs/plugin-react": "^1.0.7",
+    "d3-ease": "^3.0.1",
+    "d3-scale": "^4.0.2",
     "eslint": "^7.32.0",
     "husky": "^7.0.4",
     "less": "^4.1.2",
     "lint-staged": "^12.1.2",
     "typescript": "^4.5.4",
-    "vite": "^2.7.2"
+    "vite": "^2.7.2",
+    "vite-plugin-dts": "^0.9.9"
+  },
+  "peerDependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   },
   "license": "MIT",
   "repository": "https://github.com/diandian18/react-magic-scroll",
