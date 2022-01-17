@@ -1,8 +1,8 @@
-![npm bundle size](https://img.shields.io/badge/gzip%20size-2.5KB-brightgreen) ![typescript d.ts](https://img.shields.io/badge/typescript-d.ts-brightgreen)
-
 # react-magic-scroll
 
 🖱️ A react library for adding some effects you want when scroll.
+
+![npm bundle size](https://img.shields.io/badge/gzip%20size-2.5KB-brightgreen) ![typescript d.ts](https://img.shields.io/badge/typescript-d.ts-brightgreen)
 
 ![typescript d.ts](./src/examples/img/example.gif)
 
