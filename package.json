@@ -1,6 +1,6 @@
 {
   "name": "@zhangsai/react-magic-scroll",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "keywords": [
     "react",
     "react scroll",
@@ -15,6 +15,7 @@
     "dist"
   ],
   "main": "./dist/index.umd.js",
+  "types": "./dist/index.d.ts",
   "module": "./dist/index.es.js",
   "exports": {
     ".": {
