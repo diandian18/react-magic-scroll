@@ -1,6 +1,6 @@
 import { createContext, useContext, useRef, useCallback, useEffect } from 'react';
 import { useScroll } from 'ahooks';
-import type { DependencyList } from 'react';
+import type { DependencyList, PropsWithChildren } from 'react';
 
 export interface Position {
   left: number,
@@ -70,7 +70,7 @@ interface MagicScrollProps {
  * 为滚动目标配置滚动效果的包裹组件。
  * 也可以使用useMagicScroll配置
  */
-export const MagicScroll: React.FC<MagicScrollProps> = (props) => {
+export const MagicScroll = (props: PropsWithChildren<MagicScrollProps>) => {
   const { children, className, duration = 300, offset = 0, onProcess } = props;
   const { containerRef, scroll } = useMagicScrollConsumer();
   const ref = useRef<HTMLDivElement>(null);
