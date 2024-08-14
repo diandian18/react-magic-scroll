@@ -1,7 +1,16 @@
 {
   "name": "@zhangsai/react-magic-scroll",
   "version": "0.0.7",
-  "keywords": ["react", "react scroll", "magic scroll", "scroll trigger", "scroll animation", "scroll", "scroll magic", "apple scroll"],
+  "keywords": [
+    "react",
+    "react scroll",
+    "magic scroll",
+    "scroll trigger",
+    "scroll animation",
+    "scroll",
+    "scroll magic",
+    "apple scroll"
+  ],
   "files": [
     "dist"
   ],
@@ -51,6 +60,9 @@
     "react-dom": ">=16.9.0"
   },
   "license": "MIT",
-  "repository": "https://github.com/diandian18/react-magic-scroll",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diandian18/react-magic-scroll.git"
+  },
   "homepage": "https://github.com/diandian18/react-magic-scroll"
 }
