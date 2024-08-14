@@ -1,16 +1,16 @@
 {
   "name": "@zhangsai/react-magic-scroll",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "keywords": ["react", "react scroll", "magic scroll", "scroll trigger", "scroll animation", "scroll", "scroll magic", "apple scroll"],
   "files": [
     "dist"
   ],
-  "main": "./dist/react-magic-scroll.umd.js",
-  "module": "./dist/react-magic-scroll.es.js",
+  "main": "./dist/index.umd.js",
+  "module": "./dist/index.es.js",
   "exports": {
     ".": {
-      "import": "./dist/react-magic-scroll.es.js",
-      "require": "./dist/react-magic-scroll.umd.js"
+      "import": "./dist/index.es.js",
+      "require": "./dist/index.umd.js"
     }
   },
   "scripts": {

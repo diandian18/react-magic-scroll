@@ -27,12 +27,12 @@ export default defineConfig({
   build: {
     lib: {
       entry: `${srcPath}/index.tsx`,
-      name: 'react-magic-scroll',
-      fileName: (format) => `react-magic-scroll.${format}.js`,
+      name: 'index',
+      fileName: (format) => `index.${format}.js`,
     },
     rollupOptions: {
       // 确保外部化处理那些你不想打包进库的依赖
-      external: ['react'],
+      external: ['react', 'react-dom', 'react/jsx-runtime'],
     },
   },
   server: {

@@ -32,12 +32,15 @@ export const MagicScrollProvider: React.FC = ({ children }) => {
  * MagicScroll的Provider组件 
  * 提供: 容器引用(containerRef) 和 scroll位置信息(scroll)
  */
-export const withMagicScroll = <P extends Record<string, any>>(Component: React.ComponentType<P>) => (props: P) => {
-  return (
-    <MagicScrollProvider>
-      <Component {...props} />
-    </MagicScrollProvider>
-  );
+export const withMagicScroll = <P extends Record<string, any>>(Component: React.ComponentType<P>) => {
+  const MagicScroll = (props: P) => {
+    return (
+      <MagicScrollProvider>
+        <Component {...props} />
+      </MagicScrollProvider>
+    );
+  };
+  return MagicScroll;
 };
 
 /**
